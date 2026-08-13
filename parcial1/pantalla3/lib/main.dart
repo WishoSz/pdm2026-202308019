@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false, // Es para quitar el cosito que dice debug
-      title: 'Sleepo ZZZ',
+      title: 'PANTALLA 3',
       theme: ThemeData( brightness: Brightness.light, scaffoldBackgroundColor: Colors.white ),
       home: Scaffold(
          bottomNavigationBar: NavigationBar(
