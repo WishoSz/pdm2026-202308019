@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
-
-void main() {
-  runApp(const HomeScreen());
-}
+import 'features/home/presentation/controllers/home_controller.dart';
 
 //Paleta de colores
  
 
+
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+  final MovimientosController controller;
+
+  const HomeScreen({super.key, required this.controller});
 
   @override
   Widget build(BuildContext context) {
+    // Por ahora, el estado inicial (mock, sin sqflite todavía)
+    final movimientos = controller.state;
     return Scaffold(
          bottomNavigationBar: NavigationBar(
           indicatorColor: Colors.blueGrey,
